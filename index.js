@@ -25,7 +25,7 @@ function requestUsers(screen_name) {
 
 async function requestFollowerCountForChunk(screenNames) {
   const users = await requestUsers(screenNames.join(','))
-  return users.map(user => [ user.screen_name.toLowerCase(), user.followers_count ])
+  return users.map(user => [ user.screen_name, user.followers_count ])
 }
 
 /**
@@ -34,7 +34,9 @@ async function requestFollowerCountForChunk(screenNames) {
  * returns it in the proper case.
  */
 function setReturnCase(followerCounts, screenNames) {
+  console.log(followerCounts)
+  console.log(screenNames)
   return mapKeys(followerCounts, name => {
-    return screenNames.find(screenName => screenName === name.toLowerCase())
+    return screenNames.find(screenName => screenName.toLowerCase() === name.toLowerCase())
   })
 }
