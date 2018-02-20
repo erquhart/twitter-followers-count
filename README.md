@@ -30,6 +30,8 @@ strings passed in are used as the keys for the return object.
 
 ## Authentication
 
+Get your Twitter keys here: https://apps.twitter.com/app/new
+
 In the usage example above, the four keys are stored in `process.env` as
 environment variables, which is the generally recommended approach. If you don't
 know much about environment variables, here's a [blog
