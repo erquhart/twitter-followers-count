@@ -34,8 +34,6 @@ async function requestFollowerCountForChunk(screenNames) {
  * returns it in the proper case.
  */
 function setReturnCase(followerCounts, screenNames) {
-  console.log(followerCounts)
-  console.log(screenNames)
   return mapKeys(followerCounts, name => {
     return screenNames.find(screenName => screenName.toLowerCase() === name.toLowerCase())
   })
