@@ -10,26 +10,8 @@
     "tiny-fns": "^1.0.3",
     "twitter": "^1.7.1"
   },
-  "scripts": {
-    "prepublishOnly": "npm run build",
-    "build": "babel index.js --out-file twitter-followers-count.js"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ],
-    "plugins": [
-      "transform-runtime"
-    ]
-  },
-  "browserslist": "> 1%, last 2 versions",
   "files": [
     "twitter-followers-count.js"
   ],
-  "license": "MIT",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1"
-  }
+  "license": "MIT"
 }
