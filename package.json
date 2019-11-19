@@ -1,6 +1,6 @@
 {
   "name": "twitter-followers-count",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Get the number followers for a list of Twitter screen names.",
   "keywords": "twitter",
   "author": "Shawn Erquhart <shawn@erquh.art>",
